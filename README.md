@@ -19,6 +19,22 @@
 
 ----
 
+
+**GitHook 内容大纲**
+
+1. [冒泡排序](1.bubbleSort.md)
+2. [选择排序](2.selectionSort.md)
+3. [插入排序](3.insertionSort.md)
+4. [希尔排序](4.shellSort.md)
+5. [归并排序](5.mergeSort.md)
+6. [快速排序](6.quickSort.md)
+7. [堆排序](7.heapSort.md)
+8. [计数排序](8.countingSort.md)
+9. [桶排序](9.bucketSort.md)
+10. [基数排序](10.radixSort.md)
+
+----
+
 为了方便大家学习排序算法，整理文章内容成 GitBook：[https://wowphp.com/post/komxdx8qe862.html](https://wowphp.com/post/komxdx8qe862.html)
 
-本项目整理人 GitHub 账号：[hustcc](https://github.com/hustcc)。
+项目地址：[https://github.com/hustcc/JS-Sorting-Algorithm](https://github.com/hustcc/JS-Sorting-Algorithm) by [hustcc](https://github.com/hustcc)。
