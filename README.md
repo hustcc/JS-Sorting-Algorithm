@@ -56,10 +56,8 @@
 
 ----
 
-本书内容来源于：
- - [https://wowphp.com/post/komxdx8qe862.html](https://wowphp.com/post/komxdx8qe862.html)
- - [http://www.jcodecraeer.com/a/chengxusheji/shejimoshi/2015/0527/2941.html](http://www.jcodecraeer.com/a/chengxusheji/shejimoshi/2015/0527/2941.html)
+本书内容几乎完全来源于网络。
 
-开源项目地址：[https://github.com/hustcc/JS-Sorting-Algorithm](https://github.com/hustcc/JS-Sorting-Algorithm) by [hustcc](https://github.com/hustcc)
+开源项目地址：[https://github.com/hustcc/JS-Sorting-Algorithm](https://github.com/hustcc/JS-Sorting-Algorithm)，整理人 [hustcc](https://github.com/hustcc)。
 
-GitHook 在线阅读地址：[https://sort.hust.cc/](https://sort.hust.cc/)
+GitHook 在线阅读地址：[https://sort.hust.cc/](https://sort.hust.cc/)。
