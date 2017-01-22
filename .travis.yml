@@ -1,0 +1,21 @@
+sudo: required
+language: python
+python:
+  - "2.7"
+before_install:
+  - pip install flake8
+  - pip install hint
+script: 
+  - flake8
+  - hint README.md
+  - hint SUMMARY.md
+  - hint 1.bubbleSort.md
+  - hint 2.selectionSort.md
+  - hint 3.insertionSort.md
+  - hint 4.shellSort.md
+  - hint 5.mergeSort.md
+  - hint 6.quickSort.md
+  - hint 7.heapSort.md
+  - hint 8.countingSort.md
+  - hint 9.bucketSort.md
+  - hint 10.radixSort.md
