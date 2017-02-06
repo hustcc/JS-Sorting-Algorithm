@@ -6,6 +6,9 @@ import (
 	"time"
 )
 
+/* global varialbe for heapsort*/
+var arrLen int
+
 // 初始化 array with num
 func initArray(num int) []int {
 	if num < 1 {
@@ -88,7 +91,6 @@ func selectionSort(arr []int) []int {
 
 // insertion sort
 func insertionSort(arr []int) []int {
-	// length := len(arr)
 	for i := range arr {
 		preIndex := i - 1
 		current := arr[i]
@@ -188,6 +190,40 @@ func partition(arr []int, left, right int) int {
 	return index - 1
 }
 
+// heap sort
+func heapSort(arr []int) []int {
+	arrLen := len(arr)
+	buildMaxHeap(arr, arrLen)
+	for i := arrLen - 1; i >= 0; i-- {
+		swap(arr, 0, i)
+		arrLen -= 1
+		heapify(arr, 0, arrLen)
+	}
+	return arr
+}
+
+func buildMaxHeap(arr []int, arrLen int) {
+	for i := arrLen / 2; i >= 0; i-- {
+		heapify(arr, i, arrLen)
+	}
+}
+
+func heapify(arr []int, i, arrLen int) {
+	left := 2*i + 1
+	right := 2*i + 2
+	largest := i
+	if left < arrLen && arr[left] > arr[largest] {
+		largest = left
+	}
+	if right < arrLen && arr[right] > arr[largest] {
+		largest = right
+	}
+	if largest != i {
+		swap(arr, i, largest)
+		heapify(arr, largest, arrLen)
+	}
+}
+
 func swap(arr []int, i, j int) {
 	arr[i], arr[j] = arr[j], arr[i]
 }
@@ -200,4 +236,5 @@ func main() {
 	test_func(num, shellSort)
 	test_func(num, mergeSort)
 	test_func(num, quickSort)
+	test_func(num, heapSort)
 }
