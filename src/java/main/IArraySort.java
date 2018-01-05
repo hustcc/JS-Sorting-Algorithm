@@ -1,5 +1,3 @@
-package com.corning.sort;
-
 /**
  * Created by corning on 2017/12/19.
  */

@@ -17,3 +17,5 @@ _book
 \.idea/
 
 *.iml
+
+src/javaSortTest/target/

@@ -1,5 +1,3 @@
-package com.corning.sort;
-
 import java.util.Arrays;
 
 /**
