@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.corning</groupId>
+    <artifactId>sort</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+
+    <developers>
+        <developer>
+            <name>CorningSun</name>
+            <email>corningsun@163.com</email>
+            <url>http://www.corningsun.com</url>
+        </developer>
+    </developers>
+
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <dependency.version>LATEST</dependency.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${dependency.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.20.1</version>
+                <configuration>
+                    <!-- 跳过单元测试 -->
+                    <!--<skipTests>true</skipTests>-->
+
+                    <!-- 跳过单元测试代码编译 -->
+                    <!--<skip>true</skip>-->
+
+                    <!-- 包含与排除测试用例 -->
+                    <!--<includes>-->
+                    <!--<include>**/*Tests.java</include>-->
+                    <!--</includes>-->
+                    <!--<excludes>-->
+                    <!--<exclude>**/*ServiceTest.java</exclude>-->
+                    <!--<exclude>**/TempDaoTest.java</exclude>-->
+                    <!--</excludes>-->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

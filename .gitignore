@@ -15,3 +15,7 @@ _book
 *.mobi
 *.pdf
 \.idea/
+
+*.iml
+
+src/javaSortTest/target/
