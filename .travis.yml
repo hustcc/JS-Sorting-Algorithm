@@ -1,8 +1,6 @@
-sudo: required
-language: python
-python:
-  - "2.7"
+language: node_js
+node_js:
+  - "10"
 before_install:
-  - pip install hint
-script: 
-  - hint .
+  - npm i lint-md
+script: npx lint-md ./
