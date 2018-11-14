@@ -64,4 +64,4 @@
 
 GitBook 在线阅读地址：[https://sort.hust.cc/](https://sort.hust.cc/)。
 
-本项目使用 [hint](https://github.com/hustcc/hint) 进行中文 Markdown 文件的格式检查，务必在提交 Pr 之前，保证 Markdown 格式正确。
+本项目使用 [lint-md](https://github.com/hustcc/lint-md) 进行中文 Markdown 文件的格式检查，务必在提交 Pr 之前，保证 Markdown 格式正确。

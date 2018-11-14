@@ -3,4 +3,4 @@ node_js:
   - "10"
 before_install:
   - npm i -g lint-md
-script: npx lint-md ./
+script: lint-md ./
