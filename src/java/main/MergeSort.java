@@ -23,25 +23,25 @@ public class MergeSort implements IArraySort {
 
     protected int[] merge(int[] left, int[] right) {
         int[] result = new int[left.length + right.length];
-        int i = 0;
-        while (left.length > 0 && right.length > 0) {
-            if (left[0] <= right[0]) {
-                result[i++] = left[0];
-                left = Arrays.copyOfRange(left, 1, left.length);
+        int l = 0, r = 0, len = 0;
+        while (len < left.length + right.length) {
+            if (left[l] <= right[r]) {
+                result[len++] = left[l++];
+
+                if (l == left.length) {
+                    for (int i = r; i < right.length; i++) {
+                        result[len++] = right[r++];
+                    }
+                }
             } else {
-                result[i++] = right[0];
-                right = Arrays.copyOfRange(right, 1, right.length);
+                result[len++] = right[r++];
+
+                if (r == right.length) {
+                    for (int i = l; i < left.length; i++) {
+                        result[len++] = left[l++];
+                    }
+                }
             }
-        }
-
-        while (left.length > 0) {
-            result[i++] = left[0];
-            left = Arrays.copyOfRange(left, 1, left.length);
-        }
-
-        while (right.length > 0) {
-            result[i++] = right[0];
-            right = Arrays.copyOfRange(right, 1, right.length);
         }
 
         return result;
