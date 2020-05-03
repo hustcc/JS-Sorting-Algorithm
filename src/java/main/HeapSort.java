@@ -23,7 +23,8 @@ public class HeapSort implements IArraySort {
     }
 
     private void buildMaxHeap(int[] arr, int len) {
-        for (int i = (int) Math.floor(len / 2); i >= 0; i--) {
+        //从最后一个非叶子结点开始
+        for (int i = len / 2 - 1; i >= 0; i--) {
             heapify(arr, i, len);
         }
     }
