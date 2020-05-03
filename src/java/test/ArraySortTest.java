@@ -102,13 +102,6 @@ public class ArraySortTest {
     }
 
     @Test
-    public void mergeSort_merge() throws Exception {
-        assertArrayEquals(new int[]{1, 2}, new MergeSort().merge(new int[]{1, 2}, new int[]{}));
-        assertArrayEquals(new int[]{1, 2}, new MergeSort().merge(new int[]{1}, new int[]{2}));
-        assertArrayEquals(new int[]{1, 2, 3}, new MergeSort().merge(new int[]{1, 3}, new int[]{2}));
-    }
-
-    @Test
     public void quickSort() throws Exception {
         assertArrayEquals(sortedArray, new QuickSort().sort(array));
     }
