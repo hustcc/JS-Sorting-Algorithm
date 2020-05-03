@@ -6,10 +6,7 @@ import java.util.Arrays;
 public class MergeSort implements IArraySort {
 
     @Override
-    public int[] sort(int[] sourceArray) throws Exception {
-        // 对 arr 进行拷贝，不改变参数内容
-        int[] arr = Arrays.copyOf(sourceArray, sourceArray.length);
-
+    public int[] sort(int[] arr) throws Exception {
         if (arr.length < 2) {
             return arr;
         }

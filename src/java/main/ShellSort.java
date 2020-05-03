@@ -1,15 +1,10 @@
-import java.util.Arrays;
-
 /**
  * 希尔排序
  */
 public class ShellSort implements IArraySort {
 
     @Override
-    public int[] sort(int[] sourceArray) throws Exception {
-        // 对 arr 进行拷贝，不改变参数内容
-        int[] arr = Arrays.copyOf(sourceArray, sourceArray.length);
-
+    public int[] sort(int[] arr) throws Exception {
         int gap = 1;
         while (gap < arr.length) {
             gap = gap * 3 + 1;

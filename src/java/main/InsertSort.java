@@ -6,10 +6,7 @@ import java.util.Arrays;
 public class InsertSort implements IArraySort {
 
     @Override
-    public int[] sort(int[] sourceArray) throws Exception {
-        // 对 arr 进行拷贝，不改变参数内容
-        int[] arr = Arrays.copyOf(sourceArray, sourceArray.length);
-
+    public int[] sort(int[] arr) throws Exception {
         // 从下标为1的元素开始选择合适的位置插入，因为下标为0的只有一个元素，默认是有序的
         for (int i = 1; i < arr.length; i++) {
 
