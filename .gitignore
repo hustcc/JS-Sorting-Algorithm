@@ -16,6 +16,14 @@ _book
 *.pdf
 \.idea/
 
+# idea
 *.iml
 
-src/javaSortTest/target/
+# elipse
+.classpath
+.project
+.settings
+
+# build
+target
+bin

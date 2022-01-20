@@ -8,10 +8,7 @@ public class BucketSort implements IArraySort {
     private static final InsertSort insertSort = new InsertSort();
 
     @Override
-    public int[] sort(int[] sourceArray) throws Exception {
-        // 对 arr 进行拷贝，不改变参数内容
-        int[] arr = Arrays.copyOf(sourceArray, sourceArray.length);
-
+    public int[] sort(int[] arr) throws Exception {
         return bucketSort(arr, 5);
     }
 

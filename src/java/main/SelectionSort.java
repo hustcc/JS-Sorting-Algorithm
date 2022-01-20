@@ -6,9 +6,7 @@ import java.util.Arrays;
 public class SelectionSort implements IArraySort {
 
     @Override
-    public int[] sort(int[] sourceArray) throws Exception {
-        int[] arr = Arrays.copyOf(sourceArray, sourceArray.length);
-
+    public int[] sort(int[] arr) throws Exception {
         // 总共要经过 N-1 轮比较
         for (int i = 0; i < arr.length - 1; i++) {
             int min = i;
