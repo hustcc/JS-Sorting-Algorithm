@@ -20,7 +20,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <dependency.version>LATEST</dependency.version>
+        <dependency.version>4.13.1</dependency.version>
     </properties>
 
     <dependencies>
