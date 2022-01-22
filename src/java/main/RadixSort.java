@@ -51,10 +51,18 @@ public class RadixSort implements IArraySort {
 
         for (int i = 0; i < maxDigit; i++, dev *= 10, mod *= 10) {
             // 考虑负数的情况，这里扩展一倍队列数，其中 [0-9]对应负数，[10-19]对应正数 (bucket + 10)
-            int[][] counter = new int[mod * 2][0];
+            // int[][] counter = new int[mod * 2][0];
+
+            //这里不需要每次都new一个mod * 2行大小的二维数组,只需要初始化10(或20行即可),因为我们每次只提取数字的一位(0~9)
+            int[][] counter = new int[10][0]; 
 
             for (int j = 0; j < arr.length; j++) {
-                int bucket = ((arr[j] % mod) / dev) + mod;
+                
+                // int bucket = ((arr[j] % mod) / dev) + mod;
+
+                // 这里也不需要再加一个 mod ,因为我们只需要将其分到0~9桶中的一个即可.
+                int bucket = ((arr[j] % mod) / dev);
+
                 counter[bucket] = arrayAppend(counter[bucket], arr[j]);
             }
 
